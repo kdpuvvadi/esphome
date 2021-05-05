@@ -1,0 +1,63 @@
+esphome:
+  name: kitchen
+  build_path: ./builds/kitchen
+  platform: ESP32
+  board: esp32doit-devkit-v1
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+# Optional manual IP
+  manual_ip:
+    static_ip: 192.168.0.142
+    gateway: 192.168.0.1
+    subnet: 255.255.255.0
+    dns1: 1.1.1.1
+    dns2: 1.0.0.1
+ 
+logger:
+ 
+api:
+  password: !secret api_password
+ 
+ota:
+  password: !secret ota_password
+
+web_server:
+  port: 80
+
+#Wifi info
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: IP Address
+    ssid:
+      name: Wifi SSID
+
+
+# Restart the device
+switch:
+  - platform: restart
+    name: "Restart"
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO15
+      mode: INPUT_PULLUP
+    id: button01
+    on_press:
+      then:
+        - light.toggle: light01
+
+output:
+  - platform: gpio
+    pin: GPIO2
+    id: output1
+
+light:
+  - platform: binary
+    name: "My Light"
+    id: light01
+    output: output1
