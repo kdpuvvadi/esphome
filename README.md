@@ -32,7 +32,7 @@ We need Python3 and Pip3 to install esphome
  if the devices is connected via usb it'll ask for the com port selection and flashes it to the board. if you've already have firmware on the board, select ota and enter ota password if you've added it to the secrets.yaml
 
 
-##secrets.yaml
+## secrets.yaml
 You need secrets.yaml config file with wifi details, mqtt details(if mqtt is used) to compile. Follow bellow steps to create a secrets.yaml
 
 ### Method One: 
