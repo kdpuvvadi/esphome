@@ -60,5 +60,5 @@ mqtt_password: ""
   
  ### Symbolic link for secrets
  
- Windows: (Elivated Command Prompt) `mklink /H "$targetpath" "$sourcepath"` 
- Linux: `ln -s path/secrets.yaml` .`
+ * Windows: (Elivated Command Prompt) `mklink /H "$targetpath" "$sourcepath"` 
+ * Linux: `ln -s "path/secrets.yaml" .`
