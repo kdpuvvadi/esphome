@@ -74,7 +74,7 @@ ota_password: ""
 
 #### Use example file
 
-Example file for secrets is already included in the repo. Rename file from `secrets.yaml.example` to `secrets.yaml` and add the correct details and compile.
+Example file for secrets is already included in the repo. Rename file from `secrets.yaml.example` to `secrets.yaml` and add the correct details and compile. Otherwise you can download the file [Here](/blob/master/secrets.yaml.example).
 
 ### Symbolic link for secrets
 
