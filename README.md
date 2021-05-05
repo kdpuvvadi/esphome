@@ -30,7 +30,7 @@ We need Python3 and Pip3 to install esphome
 
 `esphome example.yaml run`
 
-if the devices is connected via USB it'll ask for the com port selection and flashes it to the board. if you've already have firmware on the board, select OTA and enter OTA password if you've added it to the secrets.yaml
+if the devices is connected via USB it'll ask for the com port selection and flashes it to the board. if you've already have firmware on the board, select OTA and enter OTA password if you've added it to the [secrets.yaml](#secretsyaml)
 
 ## secrets.yaml
 
@@ -40,13 +40,13 @@ You need secrets.yaml config file with WiFi details, mqtt details(if mqtt is use
 
 * Create new file named secrets.yaml in the same directory
 * add the file name to `.gitignore`
-* add content mentioned bellow to secrets.yaml file and replace/add the required details
+* add content mentioned bellow to [secrets.yaml](#secrets-eg) file and replace/add the required details
 
 ### Method Two: (Recommended)
 
 * Create new directory in some other location other than this repo
 * create secrets.yaml
-* create a link between those two folders for secrets.yaml (follow the method given later here)
+* create a [link](#symbolic-link-for-secrets) between those two folders for secrets.yaml [(follow the method given later here)](#secrets-eg)
 
 ### Secrets eg
 
