@@ -59,7 +59,7 @@ api_password: ""
 ota_password: ""
 mqtt_broker: ""
 mqtt_port: 1883
-mqtt_username: "-
+mqtt_username: ""
 mqtt_password: ""  
 ````
 
