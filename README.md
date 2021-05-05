@@ -50,6 +50,8 @@ You need secrets.yaml config file with WiFi details, mqtt details(if mqtt is use
 
 ### Secrets eg
 
+#### With MQTT
+
 ````yaml
 wifi_ssid: "ssid"
 wifi_password: "wifi-password"
@@ -59,6 +61,15 @@ mqtt_broker: ""
 mqtt_port: 1883
 mqtt_username: "-
 mqtt_password: ""  
+````
+
+#### Without MQTT
+
+````yaml
+wifi_ssid: "ssid"
+wifi_password: "wifi-password"
+api_password: ""
+ota_password: ""
 ````
 
 ### Symbolic link for secrets
