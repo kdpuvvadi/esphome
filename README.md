@@ -72,6 +72,10 @@ api_password: ""
 ota_password: ""
 ````
 
+#### Use example file
+
+Example file for secrets is already included in the repo. Rename file from `secrets.yaml.example` to `secrets.yaml` and add the correct details and compile.
+
 ### Symbolic link for secrets
 
 * Windows: (Elevated Command Prompt) `mklink /H "$targetpath" "$sourcepath"`
