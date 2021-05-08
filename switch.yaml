@@ -33,7 +33,7 @@ binary_sensor:
   # Button One
   - platform: gpio
     pin:
-      number: D34
+      number: GPIO34
       mode: INPUT_PULLUP
     id: button01
     on_press:
@@ -43,7 +43,7 @@ binary_sensor:
   # Button Two
   - platform: gpio
     pin:
-      number: D35
+      number: GPIO35
       mode: INPUT_PULLUP
     id: button02
     on_press:
@@ -53,7 +53,7 @@ binary_sensor:
   # Button Three
   - platform: gpio
     pin:
-      number: D32
+      number: GPIO32
       mode: INPUT_PULLUP
     id: button03
     on_press:
@@ -63,7 +63,7 @@ binary_sensor:
   # Button Four
   - platform: gpio
     pin:
-      number: D33
+      number: GPIO33
       mode: INPUT_PULLUP
     id: button04
     on_press:
@@ -73,7 +73,7 @@ binary_sensor:
   # Button Five
   - platform: gpio
     pin:
-      number: D25
+      number: GPIO25
       mode: INPUT_PULLUP
     id: button05
     on_press:
@@ -84,27 +84,27 @@ output:
 
   # Output One
   - platform: gpio
-    pin: D13
+    pin: GPIO13
     id: output01
   
   # Output Two
   - platform: gpio
-    pin: D12
+    pin: GPIO12
     id: output02
 
   # Output Three
   - platform: gpio
-    pin: D14
+    pin: GPIO14
     id: output03
 
   # Output Four
   - platform: gpio
-    pin: D27
+    pin: GPIO27
     id: output04
   
   # Output Four
   - platform: gpio
-    pin: D26
+    pin: GPIO26
     id: output05
 
 
