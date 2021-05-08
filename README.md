@@ -80,3 +80,6 @@ Example file for secrets is already included in the repo. Rename file from `secr
 
 * Windows: (Elevated Command Prompt) `mklink /H "$targetpath" "$sourcepath"`
 * Linux: `ln -s "path/secrets.yaml" .`
+
+### esp32 switch
+ * For switch with ESP-WROOM-32 [Schematic, PCB, & BOM](https://easyeda.com/kdpuvvadi/esp32-switch). use [switch.yaml](/switch.yaml)
