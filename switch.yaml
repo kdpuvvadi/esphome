@@ -28,3 +28,114 @@ text_sensor:
       name: Wifi SSID
 
 
+binary_sensor:
+
+  # Button One
+  - platform: gpio
+    pin:
+      number: D34
+      mode: INPUT_PULLUP
+    id: button01
+    on_press:
+      then:
+        - light.toggle: light01
+  
+  # Button Two
+  - platform: gpio
+    pin:
+      number: D35
+      mode: INPUT_PULLUP
+    id: button02
+    on_press:
+      then:
+        - light.toggle: light02
+  
+  # Button Three
+  - platform: gpio
+    pin:
+      number: D32
+      mode: INPUT_PULLUP
+    id: button03
+    on_press:
+      then:
+        - light.toggle: light04
+  
+  # Button Four
+  - platform: gpio
+    pin:
+      number: D33
+      mode: INPUT_PULLUP
+    id: button04
+    on_press:
+      then:
+        - light.toggle: light04
+        
+  # Button Five
+  - platform: gpio
+    pin:
+      number: D25
+      mode: INPUT_PULLUP
+    id: button05
+    on_press:
+      then:
+        - light.toggle: light05
+
+output:
+
+  # Output One
+  - platform: gpio
+    pin: D13
+    id: output01
+  
+  # Output Two
+  - platform: gpio
+    pin: D12
+    id: output02
+
+  # Output Three
+  - platform: gpio
+    pin: D14
+    id: output03
+
+  # Output Four
+  - platform: gpio
+    pin: D27
+    id: output04
+  
+  # Output Four
+  - platform: gpio
+    pin: D26
+    id: output05
+
+
+light:
+
+  # Light One
+  - platform: binary
+    name: "Switch One"
+    id: light01
+    output: output01
+
+  # Light Two
+  - platform: binary
+    name: "Switch Two"
+    id: light02
+    output: output02
+  
+  # Light Two
+  - platform: binary
+    name: "Switch Three"
+    id: light03
+    output: output03
+
+  # Light Two
+  - platform: binary
+    name: "Switch Four"
+    id: light04
+    output: output04
+  
+  # Light Two
+  - platform: binary
+    name: "Switch Five"
+    id: light05
+    output: output05
