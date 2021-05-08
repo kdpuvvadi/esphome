@@ -2,8 +2,8 @@
 
 ## Boards
 
-esp8266 board: nodemcu V2
-esp32 board: esp32doit-devkit-v1 (ESP-WROOM-32 Dev Kit V1)
+  * esp8266 board: nodemcu V2
+  * esp32 board: esp32doit-devkit-v1 (ESP-WROOM-32 Dev Kit V1)
 
 ## Getting Started
 
